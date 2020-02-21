@@ -1,0 +1,123 @@
+@import 'fonts';
+
+$colors: (
+    'main': #299fca
+);
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    padding: 0 15px;
+    font-size: 15px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+.header {
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+    top: -18px;
+    left: 0;
+    right: 0;
+
+    &__inner {
+        background-color: #4cb2e7;
+        display: flex;
+        position: relative;
+        height: 84px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        transform: rotate(-2deg);
+
+        .inner__logo {
+            color: map-get($colors, main);
+            border: 6px solid #fff;
+            background-color: #e1ecf2;
+            position: absolute;
+            top: -30px;
+            left: 30px;
+            transform: rotate(-5deg);
+            padding: 40px 25px 15px 25px;
+            border-bottom-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            text-align: center;
+
+            .logo__sup {
+                font-size: 33px;
+                font-family: 'AGAalenBoldC-Web', sans-serif;
+            }
+
+            .logo__sub {
+                font-size: 15px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+        }
+        .inner__nav {
+            transform: rotate(2deg);
+            margin-left: 320px;
+            margin-right: 80px;
+            margin-top: 15px;
+            font-family: 'AG_SouvenirC-Web', sans-serif;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+
+            .nav__item {
+                color: #fff;
+                text-decoration: none;
+                font-size: 17px;
+
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+.intro {
+    background: url('/public/img/intro_bg.png') no-repeat top left;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    padding-top: 90px;
+
+    .intro__top {
+        position: relative;
+
+        .top_img {
+            padding-top: 40px;
+        }
+
+        .top__subscribe {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 308px;
+            border: 7px solid #7ebee0;
+            background-color: #299fca;
+            border-radius: 30px;
+            padding: 39px;
+            color: #fff;
+            font-size: 17px;
+            font-family: 'AG_Foreigner_Roman', sans-serif;
+        }
+    }
+}
