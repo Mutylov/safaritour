@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Safari Tour</title>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
         <link rel="stylesheet" href="public/css/bace.css" />
     </head>
     <body>
@@ -30,10 +31,217 @@
                     <div class="top_img">
                         <img src="/public/img/plane.png" alt="" />
                     </div>
-                    <div class="top__subscribe">top__subscribe</div>
+                    <div class="top__subscribe">
+                        <div class="subscribe__mark">
+                            <div class="mark__text">Online Booking</div>
+                        </div>
+                        <form class="subscribe__form" action="/" method="post">
+                            <div class="form__row">
+                                <label for="name">Name</label>
+                                <input type="text" class="text__input" id="name" value="" />
+                            </div>
+                            <div class="form__row">
+                                <label for="email">email</label>
+                                <input type="email" class="text__input" id="email" value="" />
+                            </div>
+                            <div class="form__row">
+                                <label for="package">Package</label>
+                                <select name="package" class="text__input" id="package">
+                                    <option value="1">Africa Packages</option>
+                                </select>
+                            </div>
+                            <div class="form__row">
+                                <label for="message">message</label>
+                                <textarea id="message" class="text__input" name="message" rows="3"></textarea>
+                            </div>
+                            <div class="btns">
+                                <button class="btn" type="submit">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="intro__footer">
+                <div class="container">
+                    <h3 class="inner__title">Our special offers</h3>
+                    <div class="footer__inner">
+                        <div class="inner__col inner__col--little">
+                            <div class="col__cell">
+                                <img class="cell__img" src="public/img/layer_19.jpg" alt="" />
+                                <div class="cell__data">
+                                    <div class="data__title">1914 translation</div>
+                                    <div class="data__text">But I must explain to you how all this mistaken idea of denouncing pleasure</div>
+                                    <div class="data__more"><span class="more__price">700$</span> <a class="btn" href="#">Read More</a></div>
+                                </div>
+                            </div>
+                            <div class="col__cell">
+                                <img class="cell__img" src="public/img/layer_19.jpg" alt="" />
+                                <div class="cell__data">
+                                    <div class="data__title">1914 translation</div>
+                                    <div class="data__text">But I must explain to you how all this mistaken idea of denouncing pleasure</div>
+                                    <div class="data__more"><span class="more__price">700$</span> <a class="btn" href="#">Read More</a></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inner__col">
+                            <div class="panel">
+                                <div class="panel__special">
+                                    <img src="/public/img/special.png" alt="" />
+                                </div>
+                                <div class="panel__tabs">
+                                    <a class="tabs__item tabs__item--active" href="">Tours</a>
+                                    <a class="tabs__item" href="">Photos</a>
+                                </div>
+                                <div class="panel__inner">
+                                    <div class="inner">
+                                        <table class="table">
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-chevron-circle-right"></i></td>
+                                                <td>Lorem Ipsum is simply dummy text simply</td>
+                                                <td>10 Days</td>
+                                                <td>more details</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <article>1</article>
+
+        <section class="section section">
+            <div class="container">
+                <div class="section__header">
+                    <h3 class="header__title">Find Tourist Spots by Map</h3>
+                    <p class="header__description">Click on map</p>
+                </div>
+                <div class="section__inner">
+                    <div class="inner__map">
+                        <img class="inner__map" src="public/img/map.png" alt="" />
+                        <svg viewbox="0 0 961 469" width="961" height="469">
+                            <path class="path path--active" d="m 405.33052,243.90727 c 0,0 3.68111,-4.49913 4.49913,-4.77181 0.81802,-0.27267 3.54477,-4.7718 3.54477,-4.7718 0,0 2.59041,-4.63546 2.59041,-5.31715 0,-0.68168 2.18139,-2.59041 3.13575,-2.59041 0.95436,0 1.36337,-1.36337 1.77239,-2.72674 0.40901,-1.36337 2.04505,-3.6811 2.5904,-3.81744 0.54535,-0.13634 2.04506,-1.36337 2.59041,-2.99942 0.54535,-1.63605 1.0907,-4.22645 1.77238,-4.36279 0.68169,-0.13634 3.68111,-3.27209 4.22646,-4.22645 0.54535,-0.95436 1.63604,-4.49913 2.86308,-4.49913 1.22703,0 4.7718,0.81802 5.31715,1.0907 0.54535,0.27267 3.81744,0.27267 4.7718,0.27267 0.95436,0 5.04448,1.36337 5.31715,-0.13634 0.27268,-1.49971 1.0907,-2.72674 2.1814,-2.72674 1.0907,0 3.27209,1.22703 3.81744,-0.40901 0.54535,-1.63605 2.72674,-1.90872 4.09012,-1.63605 1.36337,0.27267 7.63488,0.81802 9.67994,0.54535 2.04506,-0.27268 4.22645,-0.54535 5.99884,-0.27268 1.77238,0.27268 3.6811,-0.40901 3.6811,0.27268 0,0.68169 -0.68169,0.81802 -0.40901,1.77238 0.27267,0.95436 2.18139,1.36337 2.18139,1.36337 0,0 0.68169,0.54535 0.40902,1.36338 -0.27268,0.81802 -2.1814,2.04506 -2.45407,3.13575 -0.27268,1.0907 -3.2721,2.1814 -0.13634,2.45407 3.13575,0.27268 3.95378,2.59041 5.31715,2.59041 1.36337,0 2.31773,0.27267 4.36279,0.27267 2.04506,0 4.7718,0.81803 5.31715,1.49971 0.54535,0.68169 -0.13634,2.72675 1.90872,2.72675 2.04506,0 1.77239,-0.13634 3.40843,0.54535 1.63605,0.68168 3.54477,1.77238 4.36279,0.27267 0.81803,-1.49971 0.40901,-3.6811 1.0907,-3.81744 0.68169,-0.13634 -1.0907,-0.95436 2.72675,-1.22704 3.81744,-0.27267 4.90813,0.40902 5.58982,0.68169 0.68169,0.27267 0.13634,1.77238 0.81802,1.90872 0.68169,0.13634 0.95436,0.27268 3.81745,0.27268 2.86308,0 4.22645,-0.40902 5.31715,0 1.09069,0.40901 1.77238,2.72674 1.77238,2.72674 0,0 1.49971,0.68169 3.68111,0 2.18139,-0.68169 3.13575,-3.40843 3.13575,-3.40843 0,0 3.13576,-2.31773 3.68111,-1.77238 0.54534,0.54534 1.63604,2.86308 2.18139,3.40843 0.54535,0.54534 1.36337,1.63604 2.45407,1.36337 1.0907,-0.27268 2.86308,0.13634 2.72675,1.49971 -0.13634,1.36337 -0.13634,5.04447 0,6.40785 0.13633,1.36337 -0.13634,5.18081 0.68168,5.31715 0.81802,0.13633 1.90872,1.22703 1.90872,2.5904 0,1.36338 2.31773,4.36279 2.31773,4.36279 0,0 1.77239,2.72675 1.90873,3.68111 0.13633,0.95436 1.49971,9.95262 1.49971,9.95262 0,0 2.18139,0.68168 2.86308,1.49971 0.68168,0.81802 2.72674,1.90872 2.72674,3.81744 0,1.90872 1.63605,4.36279 2.59041,5.45349 0.95436,1.09069 3.54477,3.40843 4.49913,4.49912 0.95436,1.0907 3.27209,1.49971 3.40843,2.99942 0.13633,1.49971 0.27267,4.09012 1.22703,4.49913 0.95436,0.40901 2.04506,1.77238 3.27209,0.81802 1.22704,-0.95436 1.49971,-2.5904 2.1814,-2.04506 0.68169,0.54535 1.49971,0.68169 2.99942,0.54535 1.49971,-0.13633 2.5904,-0.95436 3.27209,-1.36337 0.68169,-0.40901 2.31773,-1.0907 3.40843,-1.0907 1.0907,0 4.09012,-0.68168 4.7718,0.81803 0.68169,1.49971 0.27268,3.6811 0.13634,4.63546 -0.13634,0.95436 -0.81802,2.86308 -1.49971,4.36279 -0.68168,1.49971 -1.77238,3.81744 -3.13575,4.90814 -1.36338,1.0907 -3.40843,3.54477 -3.81745,4.49913 -0.40901,0.95436 -2.72674,2.99942 -2.86308,3.68111 -0.13634,0.68168 -2.18139,3.40843 -2.99942,4.7718 -0.81802,1.36337 -6.95319,6.27151 -8.86192,7.63488 -1.90872,1.36337 -5.18081,1.77238 -5.8625,3.27209 -0.68168,1.49971 -1.22703,5.45349 -1.77238,5.58983 -0.54535,0.13634 -1.63605,-1.49971 -1.63605,1.36337 0,2.86308 0,3.68111 0.27268,5.45349 0.27267,1.77238 0.95436,2.31773 1.22703,3.6811 0.27268,1.36338 1.49971,1.77239 1.77239,3.54477 0.27267,1.77239 0.13633,3.2721 0.68168,4.09012 0.54535,0.81802 1.77239,0.40901 1.77239,2.59041 0,2.18139 0,2.86308 0,4.49912 0,1.63605 0.13633,5.04448 -0.81803,5.72617 -0.95436,0.68168 -3.81744,2.31773 -4.22645,3.13575 -0.40901,0.81803 -1.77238,2.99942 -2.86308,2.99942 -1.0907,0 -2.45407,0.68169 -3.95378,2.72674 -1.49971,2.04506 -2.59041,-0.68168 -2.72674,2.59041 -0.13634,3.2721 0,2.99942 0.54534,4.63547 0.54535,1.63604 0.95437,3.40843 0.95437,5.04447 0,1.63605 -5.04448,5.04448 -5.04448,5.04448 0,0 -1.36337,0.13634 -1.90872,-0.13634 -0.54535,-0.27267 -1.77239,-2.86308 -1.49971,0.13634 0.27267,2.99942 0.54535,5.45349 0.40901,6.81686 -0.13634,1.36337 -0.95436,1.22704 -2.31773,2.04506 -1.36337,0.81802 -2.86308,3.81744 -2.86308,4.49913 0,0.68168 -1.90873,2.86308 -2.59041,3.81744 -0.68169,0.95436 -2.31773,1.49971 -3.54477,2.86308 -1.22703,1.36337 -4.09011,3.54477 -4.09011,3.54477 0,0 -0.40902,-1.49971 -1.90873,0.13634 -1.49971,1.63604 -1.49971,1.90872 -3.40843,2.18139 -1.90872,0.27267 -3.6811,0.27267 -5.31715,0.27267 -1.63604,0 -6.13517,0.40902 -6.68052,0.54535 -0.54535,0.13634 0,1.63605 -2.04506,1.77239 -2.04506,0.13633 -5.04448,0.13633 -5.04448,0.13633 0,0 -0.40901,-1.90872 -0.27267,-2.99941 0.13634,-1.0907 0.54535,-1.36338 -0.68169,-1.90872 -1.22703,-0.54535 -2.5904,0.13633 -2.18139,-1.63605 0.40901,-1.77239 0.13634,-7.63489 0.13634,-7.63489 0,0 -0.40902,-0.81802 -1.22704,-1.77238 -0.81802,-0.95436 -2.04506,-2.59041 -2.45407,-2.86308 -0.40901,-0.27267 -0.95436,-0.54535 -1.36337,-1.77238 -0.40901,-1.22704 -0.13634,-1.63605 -0.54535,-2.59041 -0.40901,-0.95436 -2.31773,-1.63605 -2.31773,-1.63605 0,0 -0.13634,-1.22703 0.13634,-2.86308 0.27267,-1.63605 0.40901,-4.22645 0.54534,-5.45349 0.13634,-1.22703 -1.90872,-4.22645 -1.90872,-4.22645 0,0 -1.77238,0 -1.77238,-0.95436 0,-0.95436 -0.81802,-3.68111 -0.81802,-3.68111 0,0 -1.49971,-0.81802 -1.63605,-1.77238 -0.13634,-0.95436 0.40901,-3.40843 -0.27267,-3.54477 -0.68169,-0.13633 -2.45407,-0.68168 -2.59041,-1.63604 -0.13634,-0.95436 0,-5.04448 -0.13634,-5.8625 -0.13634,-0.81803 -0.13634,-3.13576 -0.13634,-3.13576 0,0 3.40843,-0.54535 3.54477,-1.90872 0.13634,-1.36337 0.13634,-4.7718 0.13634,-4.7718 0,0 1.90872,0.95436 1.90872,0.27267 0,-0.68168 0.13634,-4.63546 0.13634,-5.72616 0,-1.0907 0,-4.22645 0,-4.22645 0,0 -2.72675,0.13633 -2.86308,-0.40902 -0.13634,-0.54535 -0.27268,-2.45407 -0.27268,-4.22645 0,-1.77238 0.81802,-5.58983 0,-5.99884 -0.81802,-0.40901 -6.68052,-5.58982 -7.22587,-6.40785 -0.54535,-0.81802 -0.81802,-18.67819 -0.68169,-18.13284 0.13634,0.54534 -12.8157,0.13633 -12.8157,0.13633 l -0.54534,-1.90872 -6.9532,-0.81802 -0.54535,-2.59041 -4.7718,0.54535 -0.27268,4.63547 -5.58982,0.81802 -0.40901,-3.27209 h -4.22646 l -0.40901,2.72674 -5.58983,-0.13634 v 2.45407 l -3.27209,0.27268 0.27268,-2.72675 c 0,0 -3.54477,0.40901 -4.09012,0.27268 -0.54535,-0.13634 -11.31599,-11.31599 -11.31599,-11.31599 v -3.95378 l -3.40843,-2.45407 h -4.09011 l -1.49971,-2.45407 -2.1814,-1.22703 -0.40901,-9.54361 c 0,0 2.86308,0.13634 2.86308,-0.40901 0,-0.54535 0.81802,-13.77006 0.13634,-13.77006 -0.68169,0 -2.99942,0.27268 -2.99942,-0.27267 0,-0.54535 1.22703,-3.95378 1.22703,-3.95378 z" fill="#3f849d"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="inner__col">
+                        <div class="col__title">News letter</div>
+                        <form class="col__form" action="/" method="POST">
+                            <div class="form__row">
+                                <label for="subscribe_email">
+                                    Email
+                                    <input id="subscribe_email" class="text__input" type="email" placeholder="Enter email address" value="" />
+                                </label>
+                                <button class="form__btn" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                        <div class="col__title">Social media</div>
+                        <div class="col__social">
+                            <a class="social__item" href="#">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a class="social__item" href="#">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a class="social__item" href="#">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="inner__col">
+                        <div class="col__title">Contact us</div>
+                        <div class="col__text">
+                            <p>Lorem Ipsum is simply dummy</p>
+                            <p>Printing and typesetting</p>
+                            <p><span>Phone</span>+97 -9945512832, 55418745</p>
+                            <p><span>email</span>mail@yourdomain.com,</p>
+                            <p><span>&nbsp</span>Info@yourdomain.com</p>
+                            <p><span>Fax</span>1447854, 5564215, 55428</p>
+                        </div>
+                    </div>
+                    <div class="inner__col">
+                        <div class="col__title">Contact form</div>
+                        <form class="col__form" action="/" method="POST">
+                            <div class="form__row">
+                                <label for="contact_name">
+                                    Email
+                                    <input id="contact_name" class="text__input" type="text" placeholder="Name" value="" />
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label for="contact_email">
+                                    email address
+                                    <input id="contact_email" class="text__input" type="email" placeholder="email address" value="" />
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label for="contact_phone">
+                                    phone
+                                    <input id="contact_phone" class="text__input" type="tel" placeholder="phone" value="" />
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label for="contact_message">
+                                    message
+                                    <textarea id="contact_message" class="text__input" placeholder="message" rows="3"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__btns">
+                                <button class="form__btn" type="submit">Subscribe</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
