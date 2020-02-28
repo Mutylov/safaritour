@@ -1,0 +1,51 @@
+$breakpoints: (
+    'xs': 375px,
+    'sm': 576px,
+    'md': 768px,
+    'mp': 834px,
+    'lg': 992px,
+    'lp': 1025px,
+    'xl': 1200px
+);
+
+@mixin breakpoint-min($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+        @media (min-width: $breakpoint-value) {
+            @content;
+        }
+    } @else {
+        @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+}
+
+@mixin breakpoint-max($breakpoint) {
+    @if map-has-key($breakpoints, $breakpoint) {
+        $breakpoint-value: map-get($breakpoints, $breakpoint);
+        @media (max-width: ($breakpoint-value - 1)) {
+            @content;
+        }
+    } @else {
+        @warn 'Invalid breakpoint: #{$breakpoint}.';
+    }
+}
+
+@mixin breakpoint-between($min, $max) {
+    @if map-has-key($breakpoints, $min) and map-has-key($breakpoints, $max) {
+        $min-breakpoint: map-get($breakpoints, $min);
+        $max-breakpoint: map-get($breakpoints, $max);
+
+        @media (min-width: $min-breakpoint) and (max-width: ($max-breakpoint - 1)) {
+            @content;
+        }
+    } @else {
+        @if (map-has-key($breakpoints, $min) == false) {
+            @warn 'Your min breakpoint was invalid: #{$min}.';
+        }
+
+        @if (map-has-key($breakpoints, $max) == false) {
+            @warn 'Your max breakpoint was invalid: #{$max}.';
+        }
+    }
+}

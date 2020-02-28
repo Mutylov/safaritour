@@ -13,8 +13,7 @@ const pathes = {
 };
 
 const libs = {
-    js: ['./node_modules/jquery/dist/jquery.js', './node_modules/slick-carousel/slick/slick.js'],
-    scss: ['./node_modules/slick-carousel/slick/slick.scss']
+    js: ['./node_modules/jquery/dist/jquery.js']
 };
 
 gulp.task('sass', () =>
