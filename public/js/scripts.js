@@ -66,10 +66,10 @@ $(function() {
             const innerId = el.data('inner');
 
             $('.tabs__link--active').removeClass('tabs__link--active');
-            $('.inner__content').hide();
+            $('.inner__content').slideUp(200);
 
             el.addClass('tabs__link--active');
 
-            $('#' + innerId).show();
+            $('#' + innerId).slideDown(200);
         });
 });

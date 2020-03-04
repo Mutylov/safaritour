@@ -13,7 +13,8 @@ const pathes = {
 };
 
 const libs = {
-    js: ['./node_modules/jquery/dist/jquery.js']
+    js: ['./node_modules/jquery/dist/jquery.js', './node_modules/@fancyapps/fancybox/dist/jquery.fancybox.js'],
+    css: ['./node_modules/@fancyapps/fancybox/dist/jquery.fancybox.css']
 };
 
 gulp.task('sass', () =>

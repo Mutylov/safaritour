@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Safari Tour</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous" />
+        <link rel="stylesheet" href="public/css/libs.css" />
         <link rel="stylesheet" href="public/css/bace.css" />
     </head>
     <body>
@@ -37,7 +38,7 @@
                         <img src="/public/img/plane.png" alt="" />
                     </div>
                     <div class="top__subscribe" id="top__subscribe">
-                        <button class="subscribe__mark" id="subscribe__mark">Online Booking</button>
+                        <div class="subscribe__mark" id="subscribe__mark">Online Booking</div>
                         <form class="subscribe__form" action="/" method="post">
                             <div class="form__row">
                                 <label for="name">Name</label>
@@ -150,23 +151,22 @@
                                     </div>
                                     <div class="inner__content" id="panel_inner-photos">
                                         <div class="gallery">
-                                            <a href="/public/img/gallery_sample.jpg" class="gallery__link">
+                                            <a data-fancybox="gallery_1" href="/public/img/gallery_sample.jpg" class="gallery__link">
                                                 <img class="link__img" src="/public/img/gallery_sample.jpg" alt="" />
                                             </a>
-                                            <a href="/public/img/gallery_sample.jpg" class="gallery__link">
+                                            <a data-fancybox="gallery_1" href="/public/img/plane.png" class="gallery__link">
                                                 <img class="link__img" src="/public/img/plane.png" alt="" />
                                             </a>
-                                            <a href="/public/img/gallery_sample.jpg" class="gallery__link">
+                                            <a data-fancybox="gallery_1" href="/public/img/gallery_sample.jpg" class="gallery__link">
                                                 <img class="link__img" src="/public/img/gallery_sample.jpg" alt="" />
                                             </a>
-                                            <a href="/public/img/gallery_sample.jpg" class="gallery__link">
+                                            <a data-fancybox="gallery_1" href="/public/img/manimalizm-oblako-tekstura.jpg" class="gallery__link">
                                                 <img class="link__img" src="/public/img/manimalizm-oblako-tekstura.jpg" alt="" />
                                             </a>
-
-                                            <a href="/public/img/gallery_sample.jpg" class="gallery__link">
+                                            <a data-fancybox="gallery_1" href="/public/img/gallery_sample.jpg" class="gallery__link">
                                                 <img class="link__img" src="/public/img/gallery_sample.jpg" alt="" />
                                             </a>
-                                            <a href="/public/img/gallery_sample.jpg" class="gallery__link">
+                                            <a data-fancybox="gallery_1" href="/public/img/gallery_sample.jpg" class="gallery__link">
                                                 <img class="link__img" src="/public/img/gallery_sample.jpg" alt="" />
                                             </a>
                                         </div>
@@ -178,7 +178,24 @@
                 </div>
             </div>
         </div>
-        <section class="section section">
+        <section class="section">
+            <div class="container">
+                <div class="section__inner section__inner--photos">
+                    <div class="gallery">
+                        <a data-fancybox="gallery_2" href="/public/img/gallery_sample.jpg" class="gallery__link">
+                            <img class="link__img" src="/public/img/gallery_sample.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery_2" href="/public/img/gallery_sample.jpg" class="gallery__link">
+                            <img class="link__img" src="/public/img/gallery_sample.jpg" alt="" />
+                        </a>
+                        <a data-fancybox="gallery_2" href="/public/img/gallery_sample.jpg" class="gallery__link">
+                            <img class="link__img" src="/public/img/gallery_sample.jpg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
             <div class="container">
                 <div class="section__header">
                     <h3 class="header__title">Find Tourist Spots by Map</h3>
