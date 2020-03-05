@@ -1,7 +1,6 @@
 /*jshint esversion: 6 */
 
 const autoprefixer = require('gulp-autoprefixer');
-const cssnano = require('gulp-cssnano');
 const gulp = require('gulp');
 const sync = require('browser-sync').create();
 const sass = require('gulp-sass');
@@ -9,6 +8,7 @@ const concat = require('gulp-concat');
 const rename = require('gulp-rename');
 const sourcemaps = require('gulp-sourcemaps');
 const uglify = require('gulp-uglifyjs');
+const csso = require('gulp-csso');
 
 const pathes = {
     scss: './public/scss',
@@ -50,10 +50,8 @@ gulp.task('libs', gulp.series('libs_js', 'libs_css', 'libs_fnts'));
 gulp.task('sass', () =>
     gulp
         .src(['./public/scss/bace.scss'])
-        .pipe(sourcemaps.init())
         .pipe(sass())
         .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
-        .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./public/css'))
         .pipe(sync.stream())
 );
@@ -63,7 +61,12 @@ gulp.task('css-min', () =>
         .src([pathes.css + '/*.css', '!' + pathes.css + '/*.min.css'])
         .pipe(sourcemaps.init())
         .pipe(concat('libs.css'))
-        .pipe(cssnano({ discardComments: { removeAll: true } }))
+        .pipe(
+            csso({
+                restructure: false,
+                comments: false
+            })
+        )
         .pipe(rename({ suffix: '.min' }))
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest('./public/css'))
