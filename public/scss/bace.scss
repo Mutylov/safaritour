@@ -1,9 +1,7 @@
+@import 'variables';
+@import 'libs';
 @import 'fonts';
 @import 'mixins';
-
-$colors: (
-    'main': #299fca
-);
 
 *,
 *:before,
@@ -712,7 +710,7 @@ body {
 
             .col__social {
                 display: flex;
-                justify-content: start;
+                justify-content: flex-start;
 
                 .social__item {
                     flex-basis: 50px;
